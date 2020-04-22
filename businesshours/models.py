@@ -22,6 +22,6 @@ class BusinessHours(models.Model):
         verbose_name_plural = 'Business Hours'
 
     def __str__(self):
-        return '%s, %s - %s' % (self.Weekday.choices[self.weekday][1],
+        return '%s, %s - %s' % (self.Weekday.choices[self.weekday - 1][1],
                                 self.opening_time,
                                 self.closing_time)
