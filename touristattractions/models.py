@@ -1,5 +1,6 @@
 from django.db import models
 
+from addresses.models import Address
 from assessments.models import Assessment
 from attractions.models import Attraction
 
@@ -10,6 +11,7 @@ class TouristAttraction(models.Model):
     is_approved = models.BooleanField(blank=True, default=False)
     attractions = models.ManyToManyField(Attraction)
     assessments = models.ManyToManyField(Assessment)
+    address = models.OneToOneField(Address, blank=True, null=True, on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.name
