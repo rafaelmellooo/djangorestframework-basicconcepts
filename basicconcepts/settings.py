@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'touristattractions',
     'businesshours',
     'attractions',
+    'assessments',
 ]
 
 MIDDLEWARE = [
