@@ -13,5 +13,8 @@ class TouristAttraction(models.Model):
     assessments = models.ManyToManyField(Assessment)
     address = models.OneToOneField(Address, blank=True, null=True, on_delete=models.SET_NULL)
 
+    class Meta:
+        db_table = 'tourist_attractions'
+
     def __str__(self):
         return self.name

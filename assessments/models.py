@@ -12,5 +12,8 @@ class Assessment(models.Model):
         MinValueValidator(1), MaxValueValidator(5)
     ])
 
+    class Meta:
+        db_table = 'assessments'
+
     def __str__(self):
         return '%s - %s, %s' % (self.user.username, self.score, self.created_at)

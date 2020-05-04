@@ -13,6 +13,7 @@ class Address(models.Model):
 
     class Meta:
         verbose_name_plural = 'addresses'
+        db_table = 'addresses'
 
     def __str__(self):
         return '%s, %s - %s, %s - %s, %s' % (self.country, self.uf, self.city,

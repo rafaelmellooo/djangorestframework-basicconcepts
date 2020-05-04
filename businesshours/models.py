@@ -20,6 +20,7 @@ class BusinessHours(models.Model):
 
     class Meta:
         verbose_name_plural = 'Business Hours'
+        db_table = 'business_hours'
 
     def __str__(self):
         return '%s, %s - %s' % (self.Weekday.choices[self.weekday - 1][1],

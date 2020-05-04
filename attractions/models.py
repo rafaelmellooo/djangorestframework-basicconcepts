@@ -9,5 +9,8 @@ class Attraction(models.Model):
     business_days = models.ManyToManyField(BusinessHours)
     minimum_age = models.PositiveSmallIntegerField()
 
+    class Meta:
+        db_table = 'attractions'
+
     def __str__(self):
         return self.name
