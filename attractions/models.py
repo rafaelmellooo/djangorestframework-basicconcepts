@@ -1,6 +1,6 @@
 from django.db import models
 
-from businesshours.models import BusinessHours
+from business_hours.models import BusinessHours
 
 
 class Attraction(models.Model):

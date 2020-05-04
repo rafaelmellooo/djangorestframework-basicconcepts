@@ -6,12 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('businesshours', '0001_initial'),
+        ('business_hours', '0001_initial'),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='businesshours',
+            name='business_hours',
             options={'verbose_name_plural': 'Business Hours'},
         ),
     ]

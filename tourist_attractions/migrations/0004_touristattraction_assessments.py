@@ -7,7 +7,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('assessments', '0001_initial'),
-        ('touristattractions', '0003_touristattraction_attractions'),
+        ('tourist_attractions', '0003_touristattraction_attractions'),
     ]
 
     operations = [

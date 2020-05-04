@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('businesshours', '0001_initial'),
+        ('business_hours', '0001_initial'),
     ]
 
     operations = [
@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=150)),
                 ('description', models.TextField()),
                 ('minimum_age', models.PositiveSmallIntegerField()),
-                ('business_days', models.ManyToManyField(to='businesshours.BusinessHours')),
+                ('business_days', models.ManyToManyField(to='business_hours.BusinessHours')),
             ],
         ),
     ]

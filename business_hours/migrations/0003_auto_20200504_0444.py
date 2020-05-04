@@ -6,12 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('touristattractions', '0005_touristattraction_address'),
+        ('business_hours', '0002_auto_20200422_0148'),
     ]
 
     operations = [
         migrations.AlterModelTable(
-            name='touristattraction',
-            table='tourist_attractions',
+            name='business_hours',
+            table='business_hours',
         ),
     ]

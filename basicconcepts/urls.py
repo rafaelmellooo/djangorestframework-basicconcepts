@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 
-from touristattractions.api.viewsets import TouristAttractionViewSet
+from tourist_attractions.api.viewsets import TouristAttractionViewSet
+from attractions.api.viewsets import AttractionViewSet
 
 router = routers.DefaultRouter()
 router.register(r'tourist-attractions', TouristAttractionViewSet)
+router.register(r'attractions', AttractionViewSet)
 
 urlpatterns = [
     path('api/v1/', include(router.urls)),
