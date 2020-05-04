@@ -19,10 +19,12 @@ from rest_framework import routers
 
 from tourist_attractions.api.viewsets import TouristAttractionViewSet
 from attractions.api.viewsets import AttractionViewSet
+from business_hours.api.viewsets import BusinessHoursViewSet
 
 router = routers.DefaultRouter()
 router.register(r'tourist-attractions', TouristAttractionViewSet)
 router.register(r'attractions', AttractionViewSet)
+router.register(r'business-hours', BusinessHoursViewSet)
 
 urlpatterns = [
     path('api/v1/', include(router.urls)),
