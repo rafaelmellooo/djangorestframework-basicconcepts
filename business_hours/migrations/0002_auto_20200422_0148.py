@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterModelOptions(
-            name='business_hours',
+            name='businesshours',
             options={'verbose_name_plural': 'Business Hours'},
         ),
     ]
